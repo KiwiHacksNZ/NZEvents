@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NZ Events — Student Opportunities Forum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>NZ</text></svg>">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">
+        <span class="logo-icon">/</span>
+        <span class="logo-text">NZ Events</span>
+      </a>
+      <div class="nav-links">
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#submit" class="btn-nav">Contribute</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Student led. Opportunity driven.</p>
+      <h1>Don't miss out on what<br>your school didn't tell you.</h1>
+      <p class="hero-sub">
+        Competitions, scholarships, workshops, and opportunities for NZ students
+        — all in one place, curated by students who actually care.
+      </p>
+      <div class="hero-actions">
+        <a href="#events" class="btn btn-primary">Browse Events</a>
+        <a href="#submit" class="btn btn-outline">Add an event</a>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <section id="events" class="events-section">
+    <div class="section-header">
+      <h2>Upcoming Opportunities</h2>
+      <p>Filter by what matters to you</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="competition">Competitions</button>
+        <button class="filter-btn" data-filter="scholarship">Scholarships</button>
+        <button class="filter-btn" data-filter="workshop">Workshops</button>
+        <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+        <button class="filter-btn" data-filter="volunteer">Volunteering</button>
+        <button class="filter-btn" data-filter="career">Careers</button>
+      </div>
+      <div class="filter-group">
+        <select id="region-filter" class="region-select">
+          <option value="all">All Regions</option>
+          <option value="northland">Northland</option>
+          <option value="auckland">Auckland</option>
+          <option value="waikato">Waikato</option>
+          <option value="bay-of-plenty">Bay of Plenty</option>
+          <option value="gisborne">Gisborne</option>
+          <option value="hawkes-bay">Hawke's Bay</option>
+          <option value="taranaki">Taranaki</option>
+          <option value="manawatu">Manawatū-Whanganui</option>
+          <option value="wellington">Wellington</option>
+          <option value="tasman">Tasman</option>
+          <option value="nelson">Nelson</option>
+          <option value="marlborough">Marlborough</option>
+          <option value="west-coast">West Coast</option>
+          <option value="canterbury">Canterbury</option>
+          <option value="otago">Otago</option>
+          <option value="southland">Southland</option>
+          <option value="online">Online / Nationwide</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="events-grid" id="events-grid">
+      <!-- Events populated by JS -->
+    </div>
+
+    <div class="no-results" id="no-results" style="display:none;">
+      <p>No events match your filters right now.</p>
+      <p>Know of one? <a href="#submit">Submit it!</a></p>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2>The two-way problem</h2>
+      <div class="problem-cards">
+        <div class="problem-card">
+          <h3>Providers</h3>
+          <p>External organisations want to reach students directly but get gatekept by school admin. Great opportunities die in teacher inboxes.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Teachers</h3>
+          <p>Broadcasting isn't part of their job and they get no reward for it. Even passionate teachers burn out being the middleman.</p>
+        </div>
+        <div class="problem-card solution">
+          <h3>The Fix</h3>
+          <p>A student-led platform that teachers can point to instead of forwarding emails. Everyone wins — students find opportunities, teachers offload, providers reach their audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>Built by students, for students</h2>
+      <p>
+        Your school experience shouldn't depend on whether your teacher forwards an email.
+        NZ Events exists because too many students miss opportunities — not because of budget,
+        not because of ability — just because nobody told them.
+      </p>
+      <p>
+        We're a student-led initiative collecting and sharing every competition, scholarship,
+        workshop, and opportunity we can find. If it's open to NZ students, it belongs here.
+      </p>
+      <div class="about-features">
+        <div class="feature">
+          <span class="feature-icon">/</span>
+          <h3>No Gatekeepers</h3>
+          <p>Direct access to opportunities without waiting for someone to forward an email</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">/</span>
+          <h3>Student Curated</h3>
+          <p>We only list stuff that's genuinely useful — no spam, no filler</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">/</span>
+          <h3>NZ Focused</h3>
+          <p>Every listing is relevant to Aotearoa students specifically</p>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">/</span>
+          <h3>Always Updated</h3>
+          <p>New opportunities added as soon as we find them</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="submit" class="submit-section">
+    <div class="submit-content">
+      <h2>Want to add an event?</h2>
+      <p>This site is open source. Fork the repo, add your event to <code>events.json</code>, and open a pull request.</p>
+      <div class="contribute-steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <div>
+            <h3>Fork the repo</h3>
+            <p>Head to GitHub and fork <a href="https://github.com/kiwihacksnz/nzevents" target="_blank" rel="noopener">kiwihacksnz/nzevents</a> to your account.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <div>
+            <h3>Edit events.json</h3>
+            <p>Add your event as a new entry. Follow the existing format — name, org, category, region, date, years, description, link, and urgent.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <div>
+            <h3>Open a PR</h3>
+            <p>Submit a pull request back to the main repo. We'll review it and merge it in.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contribute-example">
+        <h3>Example entry</h3>
+        <pre><code>{
+  "name": "Your Event Name",
+  "org": "Organisation",
+  "category": "competition",
+  "region": "auckland",
+  "date": "2026-06-01",
+  "years": "Year 9-13",
+  "description": "What it is and why students should care.",
+  "link": "https://example.com",
+  "contact": "hello@example.com",
+  "urgent": false
+}</code></pre>
+      </div>
+      <div class="contribute-actions">
+        <a href="https://github.com/kiwihacksnz/nzevents/fork" target="_blank" rel="noopener" class="btn btn-primary">Fork on GitHub</a>
+        <a href="https://github.com/kiwihacksnz/nzevents/edit/main/events.json" target="_blank" rel="noopener" class="btn btn-outline">Edit events.json directly</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="logo-icon">/</span>
+        <span>NZ Events — Student-led since 2025</span>
+      </div>
+      <div class="footer-right">
+        <p>Got questions? <a href="mailto:niko@kiwihacks.org">niko@kiwihacks.org</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
