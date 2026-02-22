@@ -1,14 +1,38 @@
 [
   {
-    "name": "Kiwihacks 2026",
-    "org": "Kiwihacks",
+    "name": "KiwiHacks 2026",
+    "org": "KiwiHacks",
     "category": "hackathon",
-    "region": "in person",
+    "region": "auckland",
     "date": "2026-03-28",
-    "years": "Year 11-13",
-    "description": "Kiwihacks is a national hackathon for secondary school students. Build something cool, learn new skills, and meet like minded peers.",
+    "years": "Year 9-13",
+    "description": "Auckland's free 24hr hackathon for high schoolers. Build something cool, learn new skills, and meet like-minded coders. Food, drinks, and swag provided.",
     "link": "https://kiwihacks.org",
     "contact": "niko@kiwihacks.org",
-    "urgent": false
-  }
-  
+    "urgent": true
+  },
+  {
+    "name": "Campfire Auckland",
+    "org": "KiwiHacks",
+    "category": "game jam",
+    "region": "auckland",
+    "date": "2026-02-28",
+    "years": "Year 9-13",
+    "description": "A free 12hr game jam for high schoolers. Build a cool game, learn new skills, and meet like-minded coders. Food, drinks, and swag provided.",
+    "link": "https://kiwihacks.org",
+    "contact": "niko@kiwihacks.org",
+    "urgent": true
+  },
+  {
+    "name": "St Heliers Library Hack Club",
+    "org": "KiwiHacks",
+    "category": "workshop",
+    "region": "auckland",
+    "date": "Every Sunday 2-3pm",
+    "years": "Year 9-13",
+    "description": "A free weekly workshop for anyone under 18. Learn new skills, build cool projects, and meet like-minded coders.",
+    "link": "https://hack.club/st-heliers",
+    "contact": "niko@kiwihacks.org",
+    "urgent": true
+  },
+]
