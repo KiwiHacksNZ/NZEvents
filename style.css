@@ -44,6 +44,8 @@ header {
   right: 0;
   z-index: 100;
   background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1.5px dashed var(--text);
 }
 
